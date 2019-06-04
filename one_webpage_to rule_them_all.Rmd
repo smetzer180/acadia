@@ -1,0 +1,286 @@
+
+---
+title: "Incorporating climate change refugia into climate adaptation in the Acadia National Park region"
+output:
+  html_document:
+    toc: yes
+---
+
+
+<center>
+![](D:/acad/6_shiny/web_page/figures/Petit_manan.png){width=40.3%}    ![](https://www.nps.gov/acad/planyourvisit/images/Kent_Bass-Harbor.jpg?maxwidth=1200&maxheight=1200&autorotate=false){width=39%}
+
+</center>
+
+
+## About the project
+
+Climate change is predicted to have significant impacts on New England’s biodiversity. If emissions continue unabated, mean global temperature is predicted to rise by 3-5 ºC by the end of the century, and well beyond the range of natural variability. ^[Rawlins, M. A., R. S. Bradley, and H. F. Diaz. 2012. Assessment of regional climate model simulation estimates over the northeast United States. Journal of Geophysical Research: Atmospheres 117: D23112.] Changes are already evident in Acadia National Park (ACAD). Between 1895 and 2010, annual precipitation significantly increased in ACAD by 16% and temperatures by 0.8 ºC; the rate of temperature increase in the park is expected to be 3-6 times greater by 2100, particularly in inland portions. ^[Gonzalez, P. 2014. Climate change trends and vulnerabilities in Acadia National Park, Maine.]
+
+Identifying climate change refugia for representative species can provide valuable information for adapting to climate change. ^[Maher, S., T. Morelli, M. Hershey, A. Flint, L. Flint, C. Moritz, and S. Beissinger 2017. Erosion of refugia in the Sierra Nevada meadows network with climate change. Ecosphere 8:1–17. doi: 10.1002/ecs2.1673]. Climate change refugia are areas relatively buffered from contemporary climate change over time that enable persistence of valued physical, ecological, and socio-cultural resources.^[Morelli, T. L., C. Daly, S. Z. Dobrowski, D. M. Dulen, J. L. Ebersole, S. T. Jackson, J. D. Lundquist et al. 2016. Managing climate change refugia for climate adaptation. PLoS ONE 11: e0159909.]. Many of the physical characteristics and microclimatic gradients that can create climate change refugia -  such as high spatial heterogeneity in topography and habitat, proximity to large water bodies, and regular inland diffusion of coastal fog ^[Ashcroft M. B. 2010.  Identifying refugia from climate change. Journal of Biogeography 37:1407–13. doi: 10.1111/j.1365-2699.2010.02300.x] ^[Dobrowski, S. Z. 2011. A climatic basis for microrefugia: The influence of terrain on climate. Global Change Biology 17:1022–35. doi: 10.1111/j.1365-2486.2010.02263.x] - are present in ACAD (Fig. 1). 
+
+><font size="4">***This project seeks to identify and map climate change refugia for a suite of species in the Acadia National Park Region, and to work with managers to use of these data products in strategically guiding on-the-ground management and conservation actions.*** </font>
+
+<br>
+<center>
+![](D:/acad/6_shiny/web_page/figures/refugia.png){width=70%}
+
+*Figure 1. Examples of geographic locations likely to be buffered from climate change (from Morelli et al. 2016)*
+</center>
+
+<br>
+
+## Methods 
+
+We used climate and environmental variables to model the probability of occupancy of focal species. We developed species distribution models^[Elith, J., & J.R. Leathwick. 2009. Species Distribution Models: Ecological Explanation and Prediction Across Space and Time. Annual Review of Ecology, Evolution, and Systematics 40: 677-697.] using occupancy data from [iNaturalist](https://www.inaturalist.org/), [GBIF](https://www.gbif.org/en/), the Environmental Protection Agency’s [National Aquatic Resource Surveys](https://www.epa.gov/national-aquatic-resource-surveys), [Nature's Phenology Notebook](https://www.usanpn.org/natures_notebook) and [eBird](https://ebird.org/home). We included a range of relevant environmental variables in models for each species, as well as fine-scale climate data developed through the North Atlantic Landscape Conservation Cooperative’s [Designing Sustainable Landscapes (DSL) project](https://www.umass.edu/landeco/research/dsl/dsl.html). ^[McGarigal K., B. W. Compton, E. B. Plunkett, W.V. Deluca, and J. Grand (2017). Designing sustainable landscapes: project overview. Report to the North Atlantic Conservation Cooperative, US Fish and Wildlife Service, Northeast Region.] We developed models and predictions of occupancy under current conditions, using six climate variables at 800m resolution.  We used the same climate variables predicted for 2080 under standard Representative Concentration Pathways (RCP) 4.5 and 8.5. More information about the statistical methods, model paramaterization and model validation can be found
+<a href="https://drive.google.com/open?id=1HDpJVMZ0gCHOY6XzXXQ17a-VtcdBQbrg" target="_blank">here</a>. 
+
+This project is one of the first to pioneer the application of the climate change refugia conservation cycle (Fig. 2), a framework recently developed by the National Park Service (NPS), USDA Forest Service (USFS), and academic scientists.^[Morelli, T. L., C. Daly, S. Z. Dobrowski, D. M. Dulen, J. L. Ebersole, S. T. Jackson, J. D. Lundquist et al. 2016. Managing climate change refugia for climate adaptation. PLoS ONE 11: e0159909.] We engaged stakeholders and partners from relevant management organizations throughout the project to ensure that our work was effectively guided by and informing management objectives. ^[Meadow, A. M., D. B. Ferguson, Z. Guido, A. Horangic, G. Owen, and T. Wall. 2015. Moving toward the deliberate coproduction of climate science knowledge. Weather, Climate, and Society 7: 179–191. doi:10.1175/WCAS-D-14-00050.1.] ^[Wall, T. U., A. M. Meadow, and a. Horganic. 2017. Developing Evaluation Indicators to Improve the Process of Coproducing Usable Climate Science. Climate, Science, and Society 9: 95-107. DOI: 10.1175/WCAS-D-16-0008.1]  
+
+<br>
+<center>
+![](D:/acad/6_shiny/web_page/figures/CCRCS.png){width=45%}
+
+*Figure 2. Climate change refugia conservation cycle (from Morelli et al. 2016)*
+</center>
+
+
+<br>
+ 
+## Results {.tabset .tabset-pills}
+
+Below are interactive maps of putative climate change refugia for each species, restricted to the Downeast Maine coastal area. On these maps, climate change refugia represent places where the species is predicted to occur above some threshold of probability both currently, and in 2080. There are also maps showing current and future probability of occupancy as predicted by species distribution models across much of Maine, upon which the climate change refugia maps are based. 
+
+<style>
+.column-left{
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+.column-center{
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+.column-right{
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+</style>
+
+<br> 
+
+### Interactive climate change refugia maps 
+
+
+<div class="column-left">
+![](https://upload.wikimedia.org/wikipedia/commons/4/4a/Empetrum_nigrum_a1_fragment.jpg){width=30%}
+
+#### <a href="https://jsmetzer.shinyapps.io/working_crow/" target="_blank">Black Crowberry</a>
+</div>
+<div class="column-center">
+![](https://www.fs.fed.us/wildflowers/plant-of-the-week/images/boglabradortea/Ledum_groenlandicum.jpg){width=30%}
+
+#### <a href="http://jsmetzer.shinyapps.io/working_labtea/" target="_blank">Labrador Tea</a>
+</div>
+<div class="column-right">
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Sibbaldiopsis_tridentata1.jpg/1024px-Sibbaldiopsis_tridentata1.jpg){width=30%}
+
+#### <a href="http://jsmetzer.shinyapps.io/working_cinq/" target="_blank">Three-toothed cinquefoil</a>
+</div>
+
+<br>
+
+
+
+### Probability of occupancy maps
+
+
+```{r include = F}
+library(raster)
+library(ggplot2)
+library(rasterVis)
+
+# crowberry data in 
+p.crow <- raster("D:/acad/results/crowberry/prob_occ_2010_masked.tif")
+p.crow_80_45<- raster("D:/acad/results/crowberry/prob_occ_80_45_masked.tif")
+p.crow_80_85<- raster("D:/acad/results/crowberry/prob_occ_80_85_masked.tif")
+
+s.crow<- stack(p.crow, p.crow_80_45, p.crow_80_85)
+names(s.crow)<- c("Current", "RCP 4.5", "RCP 8.5")
+
+# labtea data in 
+p.lab <- raster("D:/acad/results/labtea/prob_occ_2010_masked.tif")
+p.lab_80_45<- raster("D:/acad/results/labtea/prob_occ_80_45_masked.tif")
+p.lab_80_85<- raster("D:/acad/results/labtea/prob_occ_80_85_masked.tif")
+
+s.lab <- stack(p.lab, p.lab_80_45, p.lab_80_85)
+names(s.lab)<- c("Current", "RCP 4.5", "RCP 8.5")
+
+# cinquefoil data in 
+p.cinq <- raster("D:/acad/results/cinq/prob_occ_2010_masked.tif")
+p.cinq_80_45<- raster("D:/acad/results/cinq/prob_occ_80_45_masked.tif")
+p.cinq_80_85<- raster("D:/acad/results/cinq/prob_occ_80_85_masked.tif")
+
+s.cinq <- stack(p.cinq, p.cinq_80_45, p.cinq_80_85)
+names(s.cinq)<- c("Current", "RCP 4.5", "RCP 8.5")
+```
+
+
+```{r echo=F, fig.height=6, fig.width=16}
+gplot(s.crow) + geom_tile(aes(fill = value)) +
+  facet_wrap(~ variable) +
+  scale_fill_gradientn(colours = c("white", "blue", "darkgreen", "darkorange", "red"))+
+  coord_equal() + 
+  labs(title = expression(paste("Black Crowberry ", italic("(Empetrum nigrum)"))), 
+       fill = "probability 
+of occupancy") + 
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(), 
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(), 
+        plot.title = element_text(size = 20, face = "bold"), 
+        legend.title = element_text(size = 16), 
+        legend.text = element_text(size = 14),
+        legend.key.size = unit(1.5, "cm"),
+        strip.text.x = element_text(size = 18))
+```
+
+
+<br>
+
+```{r echo=F, fig.height=6, fig.width=16}
+gplot(s.lab) + geom_tile(aes(fill = value)) +
+  facet_wrap(~ variable) +
+  scale_fill_gradientn(colours = c("white", "blue", "darkgreen", "darkorange", "red"))+
+  coord_equal() + 
+  labs(title = expression(paste("Labrador Tea ", italic("(Rhododendron groenlandicum)"))), 
+       fill = "probability 
+of occupancy") + 
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(), 
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(), 
+        plot.title = element_text(size = 20, face = "bold"), 
+        legend.title = element_text(size = 16), 
+        legend.text = element_text(size = 14),
+        legend.key.size = unit(1.5, "cm"),
+        strip.text.x = element_text(size = 18))
+```
+
+<br>
+
+```{r echo=F, fig.height=6, fig.width=16}
+gplot(s.cinq) + geom_tile(aes(fill = value)) +
+  facet_wrap(~ variable) +
+  scale_fill_gradientn(colours = c("white", "blue", "darkgreen", "darkorange", "red"))+
+  coord_equal() + 
+  labs(title = expression(paste("Three-toothed Cinquefoil ", italic("(Sibbaldiopsis tridentata)"))), 
+       fill = "probability 
+of occupancy") + 
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(), 
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(), 
+        plot.title = element_text(size = 20, face = "bold"), 
+        legend.title = element_text(size = 16), 
+        legend.text = element_text(size = 14),
+        legend.key.size = unit(1.5, "cm"),
+        strip.text.x = element_text(size = 18))
+```
+
+<br>
+
+## Who we are 
+
+This project is funded through the [Second Century Stewardship](https://www.scsparkscience.org/) research fellowship, and the [U.S. Geological Survey](https://www.usgs.gov/). The work is a collaboration between [Jennifer Smetzer](https://www.scsparkscience.org/fellow/jennifer-smetzer/), Second Century Stewardhip Fellow, and [Toni Lyn Morelli](https://necsc.umass.edu/people/toni-lyn-morelli), Research Ecologist with the Northeast Climate Adaptation Science Center and USGS. 
+
+<center>
+![](D:/acad/6_shiny/web_page/figures/funding.png){width=60%}
+</center>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+***
+## Citations {-}
+
+<style>
+  body {
+  background-color:wheat;
+  font-family: Serif;
+  font-size: 12pt;
+  }
+</style>
+<style>
+    body .main-container {
+        max-width: 1050px;
+        margin-left:150px;
+    }
+</style>
+
+<style type="text/css">
+#TOC {
+  text-color: Sienna; 
+  color: Sienna; 
+  border-color: Sienna;
+  position: fixed;
+  left: 0;
+  top: 5;
+  width: 150px;
+  height: 400%;
+  overflow:auto;
+}
+</style>
+
+<style>
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: Sienna;
+}
+</style>
+
+<style>
+    .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+        color: black;
+        background-color: Sienna;
+    }
+    .nav-pills > li.active > a:hover {
+            background-color: Sienna;
+            color:black;
+    }
+    .nav-link-color {
+            color: black;
+        }
+</style>
+
+<style type="text/css">
+h1.title {
+  font-size: 36px;
+  color: DarkGreen;
+  text-align: center;
+}
+h1 { /* Header 1 */
+font-size: 38px;
+  color: DarkGreen;
+}
+h2 { /* Header 2 */
+font-size: 30px;
+  color: Sienna;
+}
+h3 { /* Header 3 */
+  color: DarkGreen;
+}
+</style>
+
