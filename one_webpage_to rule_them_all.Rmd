@@ -8,7 +8,7 @@ output:
 
 
 <center>
-![](D:/acad/6_shiny/web_page/figures/Petit_manan.png){width=40.3%}    ![](https://www.nps.gov/acad/planyourvisit/images/Kent_Bass-Harbor.jpg?maxwidth=1200&maxheight=1200&autorotate=false){width=39%}
+![](D:/acad/6_shiny/web_page/acadia/figures/Petit_manan.png){width=40.3%}    ![](https://www.nps.gov/acad/planyourvisit/images/Kent_Bass-Harbor.jpg?maxwidth=1200&maxheight=1200&autorotate=false){width=39%}
 
 </center>
 
@@ -23,7 +23,7 @@ Identifying climate change refugia for representative species can provide valuab
 
 <br>
 <center>
-![](D:/acad/6_shiny/web_page/figures/refugia.png){width=70%}
+![](D:/acad/6_shiny/web_page/acadia/figures/refugia.png){width=70%}
 
 *Figure 1. Examples of geographic locations likely to be buffered from climate change (from Morelli et al. 2016)*
 </center>
@@ -39,7 +39,7 @@ This project is one of the first to pioneer the application of the climate chang
 
 <br>
 <center>
-![](D:/acad/6_shiny/web_page/figures/CCRCS.png){width=45%}
+![](D:/acad/6_shiny/web_page/acadia/figures/CCRCS.png){width=45%}
 
 *Figure 2. Climate change refugia conservation cycle (from Morelli et al. 2016)*
 </center>
@@ -203,7 +203,7 @@ of occupancy") +
 This project is funded through the [Second Century Stewardship](https://www.scsparkscience.org/) research fellowship, and the [U.S. Geological Survey](https://www.usgs.gov/). The work is a collaboration between [Jennifer Smetzer](https://www.scsparkscience.org/fellow/jennifer-smetzer/), Second Century Stewardhip Fellow, and [Toni Lyn Morelli](https://necsc.umass.edu/people/toni-lyn-morelli), Research Ecologist with the Northeast Climate Adaptation Science Center and USGS. 
 
 <center>
-![](D:/acad/6_shiny/web_page/figures/funding.png){width=60%}
+![](D:/acad/6_shiny/web_page/acadia/figures/funding.png){width=60%}
 </center>
 
 <br>
